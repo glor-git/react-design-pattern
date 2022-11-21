@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+## react-design-pattern
+- 리액트를 사용하여 개발하는 프론트엔드 개발자로서 리액트와 관련된 디자인 패턴을 공부하는 것이 재사용 가능한 컴포넌트를 만들거나 유지 보수하기 좋은 코드를 작성하는 대 도움이 될 것 같아 디자인 패턴 스터디를 위한 레포지토리를 생성했습니다.
+- src/[디자인 패턴 이름] 폴터에 각 패턴의 예시를 공부할 예정입니다.
+- 스터디한 디자인 패턴과 장단점은 리드미에서 확인 할 수 있습니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 1. Presentational and Container Component Pattern
+- 이 패턴은 컴포넌트를 ‘Conatainer’와 ‘Presentational’ 두 카테고리로 나눕니다.
+- Presentational은 뷰 역할을 담당하고 하고 Conatainer는 동작하는 역할을 담당합니다.
+- 패턴을 만든 Dan Abramov가 이제(2019년)는 추천하지 않는 패턴으로 사용하면 안되는 것은 아니나 지양하는 것이 좋다고 생각합니다.
+#### 장점
+- 관심사를 분리 할 수 있다.
+    - 기능과 UI가 명확하게 분리되기 때문에 코드의 구조를 이해하기 쉬워지고 유지보수, 재사용성이 뛰어나다.
+- 재사용성을 높일 수 있다.
+    - Presentational 컴포넌트는 다른 부분과 의존성을 갖지 않기 때문에 다른 container에서 마음껏 사용할 수 있다.
+- 마크업이 편하다.
+    - 이 패턴을 사용하면 ‘레이아웃 컴포넌트가’ 추출될 수 밖에 없다. 이 레이아웃 컴포넌트를 통해 똑같은 마크업을 여러번 작성하는 것을 방지할 수 있다.
+#### 단점
+- 필요하지 않는데 맹목적으로 패턴을 강제하는 현상이 있다
+- 로직을 분리하는 작업을 이제는 Hooks를 통해 할 수 있다. (Hooks로 로직을 사용하게 되면 view 뿐만 아니라 로직까지 재사용이 가능하다는 이점을 가져갈 수 있다.)
