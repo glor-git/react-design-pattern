@@ -6,9 +6,10 @@ import crp4 from "./CRP4";
 
 const CRP4 = crp4(CRP1);
 
-function Index() {
+function ConditionalRendingPattern() {
   return (
     <>
+      ConditionalRendingPattern
       <CRP1 />
       <CRP2 />
       <CRP3 />
@@ -18,4 +19,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default ConditionalRendingPattern;
