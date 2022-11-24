@@ -47,3 +47,8 @@
     - ex) *isLogin && isOwner* (x)*, showEditButton: isLogin && isOwner* (o)
 - Container 컴포넌트에 로직을 위임하는 설계 방식을 따르기 때문에 Presentational과 Container 컴포넌트 패턴의 한 종류라고 볼 수 있다.
  
+### 4. Provider Design Pattern
+- Provider Design Pattern의 목적은 다양한 구성요소에서 전역 데이터를 공유하는 것이다.
+- 이 패턴의 작동 방식을 이해하려면 먼저 React의 Context API를 이해해야 한다.
+- 해당 패턴은 Props Drilling을 피하기 위해 사용한다.
+- 보통 redux 같은 상태관리 라이브러리를 사용하지만 이번에 경우 Cotext API를 사용해 패턴을 구현했다.
