@@ -53,3 +53,6 @@
 - 이 패턴의 작동 방식을 이해하려면 먼저 React의 Context API를 이해해야 한다.
 - 해당 패턴은 Props Drilling을 피하기 위해 사용한다.
 - 보통 redux 같은 상태관리 라이브러리를 사용하지만 이번에 경우 Cotext API를 사용해 패턴을 구현했다.
+### 5. Passing Down Props
+####[2022.11.26]
+- props를 하위 컴포넌트로 전달할 때 사용하면 효과적으로 props를 전달할 수 있다.

@@ -3,6 +3,8 @@ import PresentataionalAndContrainerComponentPattern from './1. PresentataionalAn
 import ConditionalRenderingPattern from './2. ConditionalRenderingPattern';
 import ViewAssetComponentPattern from "./3. ViewAssetComponentPattern";
 import ProviderDesignPattern from "./4. ProviderDesignPattern";
+import PassingDownProps from "./5. PassingDownProps";
+
 function Router() {
   return (
     <BrowserRouter>
@@ -12,6 +14,7 @@ function Router() {
         <Route path="/2" element={<ConditionalRenderingPattern />} />
         <Route path="/3" element={<ViewAssetComponentPattern />} />
         <Route path="/4" element={<ProviderDesignPattern />} />
+        <Route path="/5" element={<PassingDownProps />} />
 
       </Routes>
     </BrowserRouter>
