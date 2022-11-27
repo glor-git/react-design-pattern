@@ -56,3 +56,9 @@
 ### 5. Passing Down Props
 ####[2022.11.26]
 - props를 하위 컴포넌트로 전달할 때 사용하면 효과적으로 props를 전달할 수 있다.
+
+### 5. Custom Hooks Pattern
+####[2022.11.27] 
+- Custom Hooks 패턴은 [**Presentational and Container Component Pattern**](https://www.notion.so/Presentational-and-Container-Component-Pattern-6f2f5d5296f544b6950a9eecf2de963f)을 Hook으로 관리하는 걸 말한다.
+- 기존 패턴에서는 공통 로직이 발생했을 때 다른 container 컴포넌트로 로직을 넘겨주지 못했는데, hook으로 로직을 관리하게 되면 UI 재사용을 넘어 로직까지 재사용이 가능해진다.
+- 즉 기존 컨테이너의 역할을 Hooks 컴포넌트가 대신 하면서 로직의 재사용까지도 가능하게 된 것
