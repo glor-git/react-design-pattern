@@ -5,6 +5,7 @@ import ViewAssetComponentPattern from "./3. ViewAssetComponentPattern";
 import ProviderDesignPattern from "./4. ProviderDesignPattern";
 import PassingDownProps from "./5. PassingDownProps";
 import CustomHooksPattern from "./6. CustomHooksPattern";
+import AtomicDesignPattern from "./7. AtomicDesignPattern";
 
 function Router() {
   return (
@@ -17,6 +18,7 @@ function Router() {
         <Route path="/4" element={<ProviderDesignPattern />} />
         <Route path="/5" element={<PassingDownProps />} />
         <Route path="/6" element={<CustomHooksPattern />} />
+        <Route path="/7" element={<AtomicDesignPattern />} />
 
       </Routes>
     </BrowserRouter>
